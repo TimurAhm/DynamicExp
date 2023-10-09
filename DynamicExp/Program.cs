@@ -3,11 +3,11 @@
     private static void Main(string[] args)
     {
         dynamic value;
-        for (int demo = 0; demo < 3; demo++)
+        for (int demo = 0; demo < 2; demo++)
         {
-            value = (demo < 2) ? (dynamic) 5 : (dynamic) "A";
+            value = (demo == 0) ? (dynamic) 5 : (dynamic) "A";
             value = value + value;
-            Console.WriteLine(value);
+            M(value);
         }
     }
 
